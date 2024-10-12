@@ -1,0 +1,71 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:root@localhost:5432/bemobi_db?schema=public"
+}
+
+model agent {
+  id          String      @id @default(uuid())
+  name        String
+  description String
+  persona     String
+  model       agentModel?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @default(now())
+  session     session[]
+}
+
+model agentModel {
+  id           String    @id @default(uuid())
+  name         String
+  agent        agent     @relation(fields: [agentId], references: [id])
+  agentId      String    @unique
+  agent_do     String
+  agent_do_not String
+  agent_be     String
+  context      context[]
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @default(now())
+}
+
+model context {
+  id           String      @id @default(uuid())
+  name         String
+  fileName     String
+  fileData     String
+  fileJson     String
+  description  String
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @default(now())
+  agentModel   agentModel? @relation(fields: [agentModelId], references: [id])
+  agentModelId String
+}
+
+model session {
+  id        String    @id @default(uuid())
+  agent     agent     @relation(fields: [agentId], references: [id])
+  agentId   String
+  history   history[]
+  active    Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now())
+}
+
+model history {
+  id        String   @id @default(uuid())
+  session   session  @relation(fields: [sessionId], references: [id])
+  sessionId String
+  message   String
+  role      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
