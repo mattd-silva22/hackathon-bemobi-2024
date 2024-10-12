@@ -1,0 +1,35 @@
+ul li {
+    list-style: none;
+}
+
+.menu nav ul{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 8px;
+    border: 1px solid #E8E9EC;
+    background:  #F7F8F9;
+}
+
+.menu nav ul li {
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--neutral-neutral-800, #A3A7B0);
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.menu nav ul li.selected{
+    background: white;
+}
