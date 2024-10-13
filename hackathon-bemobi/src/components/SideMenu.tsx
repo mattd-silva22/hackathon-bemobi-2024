@@ -49,7 +49,7 @@ const SideMenu: FC = () => {
 
       </nav>
 
-        <div className='bot-title'><h2>BOTS</h2><Image src={Add} alt="" width={24} height={24} className='click'></Image></div>
+        <div className='bot-title'><h2>BOTS</h2><Link href="/contexto"><Image src={Add} alt="" width={24} height={24} className='click'/> </Link></div>
         <nav className='nav-bots'>
 
             <div>
