@@ -61,6 +61,7 @@
     align-self: flex-start;
     color: #4E525B;
     border: 1px solid #E8E9EC;
+    text-wrap: wrap;
   }
   
 

@@ -1,12 +1,12 @@
 .aside {
     display: flex;
-    width: 20rem; /* Substituí 310px por 20rem */
-    height: auto;
-    padding: 2rem; /* Substituí 32px por 2rem */
+    width: 20rem; 
+    height: 100%;
+    padding: 2rem; 
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.7rem; /* Substituí 32px por 2rem */
-    border-radius: 1.25rem; /* 20px -> 1.25rem */
+    gap: 1.7rem; 
+    border-radius: 1.25rem; 
     background: #FFF;
     box-shadow: 0px 1.0625rem 2.5rem 0.25rem rgba(112, 144, 176, 0.11); /* Ajustei as sombras */
     position: absolute;
@@ -16,7 +16,7 @@
 .aside h1 {
     color: #1B2559;
     text-align: center;
-    font-size: 1.625rem; /* 26px -> 1.625rem */
+    font-size: 1.625rem; 
     font-style: normal;
     font-weight: 700;
     line-height: 100%;

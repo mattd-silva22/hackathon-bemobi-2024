@@ -1,0 +1,76 @@
+.config-section{
+    font-family: var(--font-inter);
+    width:1125px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.config-section .form-container{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    width: 100%;
+}
+
+.config-section label {
+    color:  #414651;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+}
+
+.config-section input {
+    border-radius: var(--radi-mlg, 8px);
+    border: 1px solid var(--Gray-300, #D5D7DA);
+    background: var(--White, #FFF);
+    font-family: var(--font-inter);
+    font-size: 12px;
+    padding: 10px 14px;
+    box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+
+}
+
+.config-section textarea {
+    width: 100%;
+    resize: none;
+    font-size: 12px;
+    font-family: var(--font-inter);
+
+    padding: 10px 14px;
+
+    border-radius: var(--radi-mlg, 8px);
+    border: 1px solid var(--Gray-300, #D5D7DA);
+    background: var(--White, #FFF);
+
+    box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+}
+
+.config-section .form-group2 {
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    align-items: left;
+    color: #A3A7B0;
+    width: 500px;
+}
+
+.config-section .form-group1 {
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    align-items: left;
+    color: #A3A7B0;
+    width: 500px;
+}
+
+.config-section h2{
+    margin-top: 20px;
+    color: #6A6F79;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
