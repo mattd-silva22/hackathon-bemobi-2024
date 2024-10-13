@@ -38,18 +38,23 @@
 
   .user .message-content {
     background-color: white;
-    color: #006064;
     padding: 10px;
     border-radius: 8px;
-    max-width: 70%;
+    width: auto;
+    max-width: 500px;
     align-self: flex-end;
     color: #102AB9;
-
     border: 1px solid #E8E9EC;
+    text-wrap: wrap;
   }
+
   .user {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .user img{
+    margin-right: 18px;
   }
 
   
