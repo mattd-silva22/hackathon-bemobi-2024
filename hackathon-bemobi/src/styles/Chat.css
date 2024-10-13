@@ -1,0 +1,112 @@
+.chat-container {
+
+    font-family: var(--font-inter);
+    display: flex;
+    width: 808px;
+    max-height:670px;
+    min-height: 85vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-shrink: 0;
+  }
+  
+.message-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow-y:auto;
+    margin-top: 64px;
+}
+  
+
+  .message {
+    font-family: var(--font-inter);
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    margin-bottom: 10px;
+    
+  }
+
+  .message .col{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+  }
+  
+
+  .user .message-content {
+    background-color: white;
+    color: #006064;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    align-self: flex-end;
+    color: #102AB9;
+
+    border: 1px solid #E8E9EC;
+  }
+  .user {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  
+  .assistant .message-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    align-self: flex-start;
+    color: #4E525B;
+    border: 1px solid #E8E9EC;
+  }
+  
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+  }
+  
+
+  .input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    border-radius: var(--radi-mlg, 8px);
+    border: 1px solid var(--neutral-neutral-400, #CCCEDB);
+    background: #FFF;
+  }
+
+  .input::placeholder{
+    font-family: var(--font-inter);
+  }
+
+  button {
+    display: flex;
+    width: 129px;
+    padding: var(--spacing-md, 16px) var(--spacing-lg, 24px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm, 8px);
+    color: white;
+    color: #FFF;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; 
+
+    border-radius: var(--radi-mlg, 8px);
+    background: var(--azul-azul-800, #062EFB);
+  }
+  
+  button:hover {
+    background-color: #004d40;
+  }
+  
