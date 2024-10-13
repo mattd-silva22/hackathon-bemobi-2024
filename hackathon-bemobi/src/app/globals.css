@@ -4,9 +4,17 @@
     box-sizing: border-box;
   }
 
+  body{
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   button {
     margin: 0;
     padding: 0;
     border: none;
     background: none;
   }
+  

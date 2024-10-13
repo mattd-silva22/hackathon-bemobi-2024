@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins, Inter } from 'next/font/google';
 import SideMenu from "@/components/SideMenu";
+import Menu from "@/components/Menu";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <body>
         <SideMenu></SideMenu>
+        <Menu/>
         {children}
       </body>
     </html>

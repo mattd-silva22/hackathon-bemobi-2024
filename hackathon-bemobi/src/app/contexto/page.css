@@ -3,14 +3,15 @@ main {
     flex-direction: column;
     align-items: center;
     margin-left: 312px;
-    color:#FBFBFB
+    color:#FBFBFB;
+    height: 100%;
 }
 
 .contexto{
     border-radius: var(--radi-mlg, 8px);
     background: #FFF;
     padding: 32px;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .contexto .new{
@@ -31,4 +32,60 @@ main {
     flex-direction: row;
     align-items: center;
     gap:10px
+}
+
+.submit-btn {
+    display: flex;
+    padding: 12px 40px;
+    max-width: 200px;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-inter);
+    color: #FFF;
+    margin-top: 20px;
+
+    border-radius: var(--radi-mlg, 8px);
+    background: var(--azul-azul-1000, #0B1B73);
+}
+
+.tabs{
+
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    max-width: 296px;
+    height: 50px;
+    display: flex;
+    padding: var(--spacing-sm, 8px);
+    align-items: center;
+    gap: var(--spacing-sm, 8px);
+
+    border-radius: var(--radi-mlg, 8px);
+    border: 1px solid var(--neutral-neutral-100, #E8E9EC);
+    background: var(--neutral-neutral-000, #F7F8F9);
+
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; 
+    color:#A3A7B0;
+}
+
+.tabs button{
+    height: 40px;
+    border-radius: var(--radi-md, 4px);
+    padding: 0 5px;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; 
+}
+
+.tabs .active{
+    background-color: #FFF;
+    color: #0B1B73;
 }
