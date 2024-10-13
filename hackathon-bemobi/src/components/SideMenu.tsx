@@ -26,7 +26,7 @@ const SideMenu: FC = () => {
             </li>
 
             <li className='nav-pages'>
-              <Link href="/" className='menu-option'>
+              <Link href="/contexto" className='menu-option'>
                 <Image src={Agentes} alt=""/> <p>Agentes</p>
               </Link>
             </li>

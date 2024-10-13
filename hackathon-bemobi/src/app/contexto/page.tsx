@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Card from "@/components/Card";
 import Image from "next/image";
 import NewBot from "@/assets/new-bot.svg"
+import PDF from "@/assets/pdf-icon.svg";
+import upload from "@/assets/upload.svg"
 
 export default function Contexto() {
 
@@ -19,16 +21,17 @@ export default function Contexto() {
     setActiveTab(tab);
   };
 
-  const handleSubmit = () => {
-   console.log({
-      name,
-      tag,
-      description,
-      initialConfig,
-      doDirective,
-      dontDirective,
-    });
-  };
+//   const handleSubmit = () => {
+//    console.log({
+//       name,
+//       tag,
+//       description,
+//       initialConfig,
+//       doDirective,
+//       dontDirective,
+//     });
+
+//   };
 
   return (
     <main>
@@ -82,13 +85,37 @@ export default function Contexto() {
             </div>
           </div>
 
-          <button onClick={handleSubmit} className="submit-btn">Treinar Modelo</button>
+          <button onClick={() => window.location.href = "/"} className="submit-btn">Treinar Modelo</button>
         </div>
       )}
 
       {activeTab === 'context' && (
         <div className="context-section">
-          <h2>Contexto</h2>
+            <div className="context-titles">
+                <h2>NOME DO ARQUIVO</h2>
+                <h2>FORMATO</h2>
+                <h2>TAMANHO</h2>
+                <h2>STATUS</h2>
+            </div>
+            <hr/>
+
+
+            <div className="file">
+                <div><Image src={PDF} alt=""/> assets.pdf</div>
+                <p> PDF</p>
+                <p>5.3MB</p>
+                <p>Enviado</p>
+                <Image src="" alt=""/>
+            </div>
+
+            <hr/>
+
+            <label htmlFor="file-upload" className="upload">
+                <Image src={upload} alt=""/> Arraste e solte ou clique e selecione o arquivo
+            </label>
+            <input id="file-upload" type="file" accept="image/*" style={{ display: 'none' }} />
+            <button onClick={() => window.location.href = "/"} className="submit-btn">Treinar Modelo</button>
+
         </div>
       )}
     </div>
