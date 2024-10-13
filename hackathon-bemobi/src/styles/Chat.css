@@ -88,7 +88,7 @@
     font-family: var(--font-inter);
   }
 
-  button {
+  .chat-container button {
     display: flex;
     width: 129px;
     padding: var(--spacing-md, 16px) var(--spacing-lg, 24px);
@@ -107,7 +107,7 @@
     background: var(--azul-azul-800, #062EFB);
   }
   
-  button:hover {
+  .chat-container button:hover {
     background-color: #004d40;
   }
   
