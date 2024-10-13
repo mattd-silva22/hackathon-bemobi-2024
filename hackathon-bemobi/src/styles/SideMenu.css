@@ -1,7 +1,7 @@
 .aside {
     display: flex;
     width: 20rem; /* Substituí 310px por 20rem */
-    height: 100%;
+    height: auto;
     padding: 2rem; /* Substituí 32px por 2rem */
     flex-direction: column;
     align-items: flex-start;
