@@ -35,15 +35,14 @@ ul li {
     background: white;
 }
 
-.selected svg {
-    fill: url(#paint0_linear_106_47); /* Aplica gradiente ao SVG */
-  }
-  
-  svg.colored {
-    fill: url(#paint0_linear_106_47); /* Cor quando selecionado */
-  }
-  
-  svg path {
-    fill: #A0A0A0; /* Cor padrão */
-  }
-  
+.svg-default {
+  filter: grayscale(1); 
+}
+
+.svg-selected {
+  fill: url(#paint0_linear_106_47); 
+}
+
+svg {
+  fill: url(#paint0_linear_106_47); 
+}
